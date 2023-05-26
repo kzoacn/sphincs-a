@@ -11,7 +11,8 @@
 #include "wotsx8.h"
 #include "address.h"
 #include "params.h"
-
+#include "uintx.h"
+#include "assert.h"
 // TODO clarify address expectations, and make them more uniform.
 // TODO i.e. do we expect types to be set already?
 // TODO and do we expect modifications or copies?
@@ -104,58 +105,66 @@ static void gen_chains(
     }
 }
 
-/**
- * base_w algorithm as described in draft.
- * Interprets an array of bytes as integers in base w.
- * This only works when log_w is a divisor of 8.
- */
-static void base_w(unsigned int *output, const int out_len,
-                   const unsigned char *input)
-{
-    int in = 0;
-    int out = 0;
-    unsigned char total;
-    int bits = 0;
-    int consumed;
 
-    for (consumed = 0; consumed < out_len; consumed++) {
-        if (bits == 0) {
-            total = input[in];
-            in++;
-            bits += 8;
+void encode(unsigned int *out, uint256_t *x, int l, int w)
+{
+
+    static int done = 0;
+    static uint256_t dp[SPX_WOTS_LEN + 1][(SPX_WOTS_LEN*(SPX_WOTS_W-1)/2) + 1];
+    int s = l * (w - 1) / 2;
+
+    if (!done)
+    {
+
+        set1_u256(&dp[0][0]);
+        for (int i = 1; i <= l; i++)
+            for (int j = 0; j <= s; j++)
+            {
+                set0_u256(&dp[i][j]);
+                for (int k = 0; k < w && k <= j; k++)
+                    add_u256(&dp[i][j], (const uint256_t *)&dp[i][j], (const uint256_t *)&dp[i - 1][j - k]);
+            }
+
+        done = 1;
+    }
+
+    for (int i = l - 1; i >= 0; i--)
+    {
+        int t = -1;
+        for (int j = 0; j < w && j <= s; j++)
+        {
+            if (!less_u256((const uint256_t *)x, (const uint256_t *)&dp[i][s - j]))
+            {
+                sub_u256(x, (const uint256_t *)x, (const uint256_t *)&dp[i][s - j]);
+            }
+            else
+            {
+                t = j;
+                break;
+            }
         }
-        bits -= SPX_WOTS_LOGW;
-        output[out] = (total >> bits) & (SPX_WOTS_W - 1);
-        out++;
+        assert(t!=-1);
+        
+        out[l - 1 - i] = t;
+        s -= t;
     }
-}
-
-/* Computes the WOTS+ checksum over a message (in base_w). */
-static void wots_checksum(unsigned int *csum_base_w,
-                          const unsigned int *msg_base_w)
-{
-    unsigned int csum = 0;
-    unsigned char csum_bytes[(SPX_WOTS_LEN2 * SPX_WOTS_LOGW + 7) / 8];
-    unsigned int i;
-
-    /* Compute checksum. */
-    for (i = 0; i < SPX_WOTS_LEN1; i++) {
-        csum += SPX_WOTS_W - 1 - msg_base_w[i];
-    }
-
-    /* Convert checksum to base_w. */
-    /* Make sure expected empty zero bits are the least significant bits. */
-    csum = csum << ((8 - ((SPX_WOTS_LEN2 * SPX_WOTS_LOGW) % 8)) % 8);
-    ull_to_bytes(csum_bytes, sizeof(csum_bytes), csum);
-    base_w(csum_base_w, SPX_WOTS_LEN2, csum_bytes);
 }
 
 /* Takes a message and derives the matching chain lengths. */
 void chain_lengths(unsigned int *lengths, const unsigned char *msg)
 {
-    base_w(lengths, SPX_WOTS_LEN1, msg);
-    wots_checksum(lengths + SPX_WOTS_LEN1, lengths);
+    uint256_t m;
+
+    set0_u256(&m);
+    for (int i = 0; i < SPX_N/8; i++)
+    {
+        m[i] = bytes_to_ull(msg+i*8,8);
+    }
+
+    encode(lengths, &m, SPX_WOTS_LEN, SPX_WOTS_W);
 }
+
+
 
 /**
  * Takes a WOTS signature and an n-byte message, computes a WOTS public key.

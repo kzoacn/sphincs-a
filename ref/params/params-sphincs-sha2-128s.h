@@ -6,14 +6,14 @@
 /* Hash output length in bytes. */
 #define SPX_N 16
 /* Height of the hypertree. */
-#define SPX_FULL_HEIGHT 63
+#define SPX_FULL_HEIGHT 64
 /* Number of subtree layer. */
-#define SPX_D 7
+#define SPX_D 8
 /* FORS tree dimensions. */
-#define SPX_FORS_HEIGHT 12
-#define SPX_FORS_TREES 14
+#define SPX_FORS_HEIGHT 13
+#define SPX_FORS_TREES 12
 /* Winternitz parameter, */
-#define SPX_WOTS_W 16
+#define SPX_WOTS_W 32
 
 /* The hash function is defined by linking a different hash.c file, as opposed
    to setting a #define constant. */
@@ -26,39 +26,7 @@
 /* For clarity */
 #define SPX_ADDR_BYTES 32
 
-/* WOTS parameters. */
-#if SPX_WOTS_W == 256
-    #define SPX_WOTS_LOGW 8
-#elif SPX_WOTS_W == 16
-    #define SPX_WOTS_LOGW 4
-#else
-    #error SPX_WOTS_W assumed 16 or 256
-#endif
-
-#define SPX_WOTS_LEN1 (8 * SPX_N / SPX_WOTS_LOGW)
-
-/* SPX_WOTS_LEN2 is floor(log(len_1 * (w - 1)) / log(w)) + 1; we precompute */
-#if SPX_WOTS_W == 256
-    #if SPX_N <= 1
-        #define SPX_WOTS_LEN2 1
-    #elif SPX_N <= 256
-        #define SPX_WOTS_LEN2 2
-    #else
-        #error Did not precompute SPX_WOTS_LEN2 for n outside {2, .., 256}
-    #endif
-#elif SPX_WOTS_W == 16
-    #if SPX_N <= 8
-        #define SPX_WOTS_LEN2 2
-    #elif SPX_N <= 136
-        #define SPX_WOTS_LEN2 3
-    #elif SPX_N <= 256
-        #define SPX_WOTS_LEN2 4
-    #else
-        #error Did not precompute SPX_WOTS_LEN2 for n outside {2, .., 256}
-    #endif
-#endif
-
-#define SPX_WOTS_LEN (SPX_WOTS_LEN1 + SPX_WOTS_LEN2)
+#define SPX_WOTS_LEN 27
 #define SPX_WOTS_BYTES (SPX_WOTS_LEN * SPX_N)
 #define SPX_WOTS_PK_BYTES SPX_WOTS_BYTES
 
