@@ -21,6 +21,7 @@
 /* For clarity */
 #define SPX_ADDR_BYTES 32
  
+ 
 #define SPX_WOTS_LEN 66
 #define SPX_WOTS_BYTES (SPX_WOTS_LEN * SPX_N)
 #define SPX_WOTS_PK_BYTES SPX_WOTS_BYTES
