@@ -2,13 +2,13 @@ Benchmarking sphincs-shake-128f simple using ref
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/ref”
 Parameters: n = 16, h = 66, d = 22, b = 6, k = 33, w = 16
 Running 10 iterations.
-thash                avg.        0.41 us (0.00 sec); median          1,441 cycles,      1x:          1,441 cycles
-Generating keypair.. avg.     2220.51 us (0.00 sec); median      7,302,960 cycles,      1x:      7,302,960 cycles
-  - WOTS pk gen..    avg.      231.29 us (0.00 sec); median        821,160 cycles,      8x:      6,569,280 cycles
-Signing..            avg.    43107.07 us (0.04 sec); median    152,882,982 cycles,      1x:    152,882,982 cycles
-  - FORS signing..   avg.     2551.60 us (0.00 sec); median      9,186,138 cycles,      1x:      9,186,138 cycles
-  - WOTS pk gen..    avg.      226.89 us (0.00 sec); median        813,456 cycles,    176x:    143,168,256 cycles
-Verifying..          avg.     2601.01 us (0.00 sec); median      9,367,542 cycles,      1x:      9,367,542 cycles
+thash                avg.        0.47 us (0.00 sec); median          1,677 cycles,      1x:          1,677 cycles
+Generating keypair.. avg.     2118.93 us (0.00 sec); median      7,622,514 cycles,      1x:      7,622,514 cycles
+  - WOTS pk gen..    avg.      264.01 us (0.00 sec); median        948,384 cycles,      8x:      7,587,072 cycles
+Signing..            avg.    49494.21 us (0.05 sec); median    178,188,408 cycles,      1x:    178,188,408 cycles
+  - FORS signing..   avg.     2979.29 us (0.00 sec); median     10,718,946 cycles,      1x:     10,718,946 cycles
+  - WOTS pk gen..    avg.      263.49 us (0.00 sec); median        948,384 cycles,    176x:    166,915,584 cycles
+Verifying..          avg.     2994.55 us (0.00 sec); median     10,775,124 cycles,      1x:     10,775,124 cycles
 Signature size: 17088 (16.69 KiB)
 Public key size: 32 (0.03 KiB)
 Secret key size: 64 (0.06 KiB)
@@ -18,13 +18,13 @@ Benchmarking sphincs-shake-192f simple using ref
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/ref”
 Parameters: n = 24, h = 66, d = 22, b = 8, k = 33, w = 16
 Running 10 iterations.
-thash                avg.        0.74 us (0.00 sec); median          2,777 cycles,      1x:          2,777 cycles
-Generating keypair.. avg.     2682.90 us (0.00 sec); median      9,651,168 cycles,      1x:      9,651,168 cycles
-  - WOTS pk gen..    avg.      333.83 us (0.00 sec); median      1,200,564 cycles,      8x:      9,604,512 cycles
-Signing..            avg.    69569.41 us (0.07 sec); median    249,194,682 cycles,      1x:    249,194,682 cycles
-  - FORS signing..   avg.    10319.08 us (0.01 sec); median     37,150,992 cycles,      1x:     37,150,992 cycles
-  - WOTS pk gen..    avg.      336.61 us (0.00 sec); median      1,207,800 cycles,    176x:    212,572,800 cycles
-Verifying..          avg.     3821.76 us (0.00 sec); median     13,748,040 cycles,      1x:     13,748,040 cycles
+thash                avg.        0.47 us (0.00 sec); median          1,700 cycles,      1x:          1,700 cycles
+Generating keypair.. avg.     3124.77 us (0.00 sec); median     11,240,172 cycles,      1x:     11,240,172 cycles
+  - WOTS pk gen..    avg.      389.25 us (0.00 sec); median      1,401,048 cycles,      8x:     11,208,384 cycles
+Signing..            avg.    80564.09 us (0.08 sec); median    290,022,120 cycles,      1x:    290,022,120 cycles
+  - FORS signing..   avg.    12023.92 us (0.01 sec); median     43,286,400 cycles,      1x:     43,286,400 cycles
+  - WOTS pk gen..    avg.      389.49 us (0.00 sec); median      1,401,336 cycles,    176x:    246,635,136 cycles
+Verifying..          avg.     4436.91 us (0.00 sec); median     15,972,588 cycles,      1x:     15,972,588 cycles
 Signature size: 35664 (34.83 KiB)
 Public key size: 48 (0.05 KiB)
 Secret key size: 96 (0.09 KiB)
@@ -34,13 +34,13 @@ Benchmarking sphincs-shake-256f simple using ref
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/ref”
 Parameters: n = 32, h = 68, d = 17, b = 9, k = 35, w = 16
 Running 10 iterations.
-thash                avg.        0.61 us (0.00 sec); median          2,177 cycles,      1x:          2,177 cycles
-Generating keypair.. avg.     7209.54 us (0.01 sec); median     25,322,058 cycles,      1x:     25,322,058 cycles
-  - WOTS pk gen..    avg.      438.41 us (0.00 sec); median      1,577,610 cycles,     16x:     25,241,760 cycles
-Signing..            avg.   141387.74 us (0.14 sec); median    508,579,362 cycles,      1x:    508,579,362 cycles
-  - FORS signing..   avg.    21775.87 us (0.02 sec); median     78,399,702 cycles,      1x:     78,399,702 cycles
-  - WOTS pk gen..    avg.      439.54 us (0.00 sec); median      1,576,332 cycles,    272x:    428,762,304 cycles
-Verifying..          avg.     4234.64 us (0.00 sec); median     13,796,514 cycles,      1x:     13,796,514 cycles
+thash                avg.        0.47 us (0.00 sec); median          1,693 cycles,      1x:          1,693 cycles
+Generating keypair.. avg.     8195.63 us (0.01 sec); median     29,488,050 cycles,      1x:     29,488,050 cycles
+  - WOTS pk gen..    avg.      511.86 us (0.00 sec); median      1,841,832 cycles,     16x:     29,469,312 cycles
+Signing..            avg.   164744.01 us (0.16 sec); median    593,083,386 cycles,      1x:    593,083,386 cycles
+  - FORS signing..   avg.    25385.94 us (0.03 sec); median     91,386,558 cycles,      1x:     91,386,558 cycles
+  - WOTS pk gen..    avg.      511.84 us (0.00 sec); median      1,841,832 cycles,    272x:    500,978,304 cycles
+Verifying..          avg.     4431.22 us (0.00 sec); median     15,949,980 cycles,      1x:     15,949,980 cycles
 Signature size: 49856 (48.69 KiB)
 Public key size: 64 (0.06 KiB)
 Secret key size: 128 (0.12 KiB)
@@ -50,13 +50,13 @@ Benchmarking sphincs-shake-128s simple using ref
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/ref”
 Parameters: n = 16, h = 63, d = 7, b = 12, k = 14, w = 16
 Running 10 iterations.
-thash                avg.        0.42 us (0.00 sec); median          1,508 cycles,      1x:          1,508 cycles
-Generating keypair.. avg.   120704.46 us (0.12 sec); median    432,957,996 cycles,      1x:    432,957,996 cycles
-  - WOTS pk gen..    avg.      234.29 us (0.00 sec); median        840,600 cycles,    512x:    430,387,200 cycles
-Signing..            avg.   912589.99 us (0.91 sec); median  3,285,131,472 cycles,      1x:  3,285,131,472 cycles
-  - FORS signing..   avg.    70884.77 us (0.07 sec); median    255,224,502 cycles,      1x:    255,224,502 cycles
-  - WOTS pk gen..    avg.      233.54 us (0.00 sec); median        840,582 cycles,   3584x:  3,012,645,888 cycles
-Verifying..          avg.      902.60 us (0.00 sec); median      3,246,588 cycles,      1x:      3,246,588 cycles
+thash                avg.        0.47 us (0.00 sec); median          1,707 cycles,      1x:          1,707 cycles
+Generating keypair.. avg.   137128.76 us (0.14 sec); median    493,648,758 cycles,      1x:    493,648,758 cycles
+  - WOTS pk gen..    avg.      267.35 us (0.00 sec); median        961,380 cycles,    512x:    492,226,560 cycles
+Signing..            avg.  1040814.01 us (1.04 sec); median  3,747,092,580 cycles,      1x:  3,747,092,580 cycles
+  - FORS signing..   avg.    81547.35 us (0.08 sec); median    293,539,950 cycles,      1x:    293,539,950 cycles
+  - WOTS pk gen..    avg.      267.18 us (0.00 sec); median        960,822 cycles,   3584x:  3,443,586,048 cycles
+Verifying..          avg.     1001.08 us (0.00 sec); median      3,602,178 cycles,      1x:      3,602,178 cycles
 Signature size: 7856 (7.67 KiB)
 Public key size: 32 (0.03 KiB)
 Secret key size: 64 (0.06 KiB)
@@ -66,13 +66,13 @@ Benchmarking sphincs-shake-192s simple using ref
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/ref”
 Parameters: n = 24, h = 63, d = 7, b = 14, k = 17, w = 16
 Running 10 iterations.
-thash                avg.        0.40 us (0.00 sec); median          1,444 cycles,      1x:          1,444 cycles
-Generating keypair.. avg.   171392.27 us (0.17 sec); median    616,216,068 cycles,      1x:    616,216,068 cycles
-  - WOTS pk gen..    avg.      333.66 us (0.00 sec); median      1,199,232 cycles,    512x:    614,006,784 cycles
-Signing..            avg.  1533888.59 us (1.53 sec); median  5,516,832,312 cycles,      1x:  5,516,832,312 cycles
-  - FORS signing..   avg.   335069.57 us (0.34 sec); median  1,206,609,786 cycles,      1x:  1,206,609,786 cycles
-  - WOTS pk gen..    avg.      333.53 us (0.00 sec); median      1,199,160 cycles,   3584x:  4,297,789,440 cycles
-Verifying..          avg.     1236.82 us (0.00 sec); median      4,451,148 cycles,      1x:      4,451,148 cycles
+thash                avg.        0.47 us (0.00 sec); median          1,695 cycles,      1x:          1,695 cycles
+Generating keypair.. avg.   199316.79 us (0.20 sec); median    717,515,010 cycles,      1x:    717,515,010 cycles
+  - WOTS pk gen..    avg.      388.92 us (0.00 sec); median      1,399,068 cycles,    512x:    716,322,816 cycles
+Signing..            avg.  1785441.89 us (1.79 sec); median  6,427,813,662 cycles,      1x:  6,427,813,662 cycles
+  - FORS signing..   avg.   390806.20 us (0.39 sec); median  1,407,018,060 cycles,      1x:  1,407,018,060 cycles
+  - WOTS pk gen..    avg.      388.93 us (0.00 sec); median      1,399,230 cycles,   3584x:  5,014,840,320 cycles
+Verifying..          avg.     1481.94 us (0.00 sec); median      5,332,932 cycles,      1x:      5,332,932 cycles
 Signature size: 16224 (15.84 KiB)
 Public key size: 48 (0.05 KiB)
 Secret key size: 96 (0.09 KiB)
@@ -82,13 +82,13 @@ Benchmarking sphincs-shake-256s simple using ref
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/ref”
 Parameters: n = 32, h = 64, d = 8, b = 14, k = 22, w = 16
 Running 10 iterations.
-thash                avg.        0.77 us (0.00 sec); median          2,748 cycles,      1x:          2,748 cycles
-Generating keypair.. avg.   112683.55 us (0.11 sec); median    403,427,898 cycles,      1x:    403,427,898 cycles
-  - WOTS pk gen..    avg.      438.14 us (0.00 sec); median      1,573,704 cycles,    256x:    402,868,224 cycles
-Signing..            avg.  1330473.51 us (1.33 sec); median  4,790,008,116 cycles,      1x:  4,790,008,116 cycles
-  - FORS signing..   avg.   434530.86 us (0.43 sec); median  1,564,233,516 cycles,      1x:  1,564,233,516 cycles
-  - WOTS pk gen..    avg.      440.28 us (0.00 sec); median      1,583,856 cycles,   2048x:  3,243,737,088 cycles
-Verifying..          avg.     1777.74 us (0.00 sec); median      6,402,942 cycles,      1x:      6,402,942 cycles
+thash                avg.        0.47 us (0.00 sec); median          1,679 cycles,      1x:          1,679 cycles
+Generating keypair.. avg.   130767.55 us (0.13 sec); median    470,748,762 cycles,      1x:    470,748,762 cycles
+  - WOTS pk gen..    avg.      509.87 us (0.00 sec); median      1,834,200 cycles,    256x:    469,555,200 cycles
+Signing..            avg.  1551304.57 us (1.55 sec); median  5,584,718,124 cycles,      1x:  5,584,718,124 cycles
+  - FORS signing..   avg.   506079.98 us (0.51 sec); median  1,821,851,892 cycles,      1x:  1,821,851,892 cycles
+  - WOTS pk gen..    avg.      509.54 us (0.00 sec); median      1,833,336 cycles,   2048x:  3,754,672,128 cycles
+Verifying..          avg.     2141.48 us (0.00 sec); median      7,709,508 cycles,      1x:      7,709,508 cycles
 Signature size: 29792 (29.09 KiB)
 Public key size: 64 (0.06 KiB)
 Secret key size: 128 (0.12 KiB)
@@ -98,13 +98,13 @@ Benchmarking sphincs-sha2-128f simple using ref
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/ref”
 Parameters: n = 16, h = 66, d = 22, b = 6, k = 33, w = 16
 Running 10 iterations.
-thash                avg.        0.48 us (0.00 sec); median          1,754 cycles,      1x:          1,754 cycles
-Generating keypair.. avg.     1506.24 us (0.00 sec); median      5,914,962 cycles,      1x:      5,914,962 cycles
-  - WOTS pk gen..    avg.      136.65 us (0.00 sec); median        491,814 cycles,      8x:      3,934,512 cycles
-Signing..            avg.    25681.19 us (0.03 sec); median     92,415,348 cycles,      1x:     92,415,348 cycles
-  - FORS signing..   avg.     1535.81 us (0.00 sec); median      5,531,508 cycles,      1x:      5,531,508 cycles
-  - WOTS pk gen..    avg.      137.17 us (0.00 sec); median        491,796 cycles,    176x:     86,556,096 cycles
-Verifying..          avg.     1537.63 us (0.00 sec); median      5,535,432 cycles,      1x:      5,535,432 cycles
+thash                avg.        0.28 us (0.00 sec); median          1,005 cycles,      1x:          1,005 cycles
+Generating keypair.. avg.     1281.44 us (0.00 sec); median      4,600,566 cycles,      1x:      4,600,566 cycles
+  - WOTS pk gen..    avg.      159.42 us (0.00 sec); median        573,768 cycles,      8x:      4,590,144 cycles
+Signing..            avg.    29927.93 us (0.03 sec); median    107,749,800 cycles,      1x:    107,749,800 cycles
+  - FORS signing..   avg.     1789.93 us (0.00 sec); median      6,441,534 cycles,      1x:      6,441,534 cycles
+  - WOTS pk gen..    avg.      159.95 us (0.00 sec); median        573,768 cycles,    176x:    100,983,168 cycles
+Verifying..          avg.     1779.61 us (0.00 sec); median      6,402,438 cycles,      1x:      6,402,438 cycles
 Signature size: 17088 (16.69 KiB)
 Public key size: 32 (0.03 KiB)
 Secret key size: 64 (0.06 KiB)
@@ -114,13 +114,13 @@ Benchmarking sphincs-sha2-192f simple using ref
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/ref”
 Parameters: n = 24, h = 66, d = 22, b = 8, k = 33, w = 16
 Running 10 iterations.
-thash                avg.        0.24 us (0.00 sec); median            860 cycles,      1x:            860 cycles
-Generating keypair.. avg.     1873.34 us (0.00 sec); median      5,786,532 cycles,      1x:      5,786,532 cycles
-  - WOTS pk gen..    avg.      198.91 us (0.00 sec); median        715,950 cycles,      8x:      5,727,600 cycles
-Signing..            avg.    42037.17 us (0.04 sec); median    151,345,692 cycles,      1x:    151,345,692 cycles
-  - FORS signing..   avg.     6898.77 us (0.01 sec); median     24,842,304 cycles,      1x:     24,842,304 cycles
-  - WOTS pk gen..    avg.      198.89 us (0.00 sec); median        715,896 cycles,    176x:    125,997,696 cycles
-Verifying..          avg.     2283.87 us (0.00 sec); median      8,226,144 cycles,      1x:      8,226,144 cycles
+thash                avg.        0.28 us (0.00 sec); median          1,003 cycles,      1x:          1,003 cycles
+Generating keypair.. avg.     1867.39 us (0.00 sec); median      6,705,198 cycles,      1x:      6,705,198 cycles
+  - WOTS pk gen..    avg.      232.42 us (0.00 sec); median        835,884 cycles,      8x:      6,687,072 cycles
+Signing..            avg.    50373.22 us (0.05 sec); median    181,354,752 cycles,      1x:    181,354,752 cycles
+  - FORS signing..   avg.     9376.24 us (0.01 sec); median     33,757,200 cycles,      1x:     33,757,200 cycles
+  - WOTS pk gen..    avg.      232.37 us (0.00 sec); median        835,920 cycles,    176x:    147,121,920 cycles
+Verifying..          avg.     2601.99 us (0.00 sec); median      9,365,400 cycles,      1x:      9,365,400 cycles
 Signature size: 35664 (34.83 KiB)
 Public key size: 48 (0.05 KiB)
 Secret key size: 96 (0.09 KiB)
@@ -130,13 +130,13 @@ Benchmarking sphincs-sha2-256f simple using ref
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/ref”
 Parameters: n = 32, h = 68, d = 17, b = 9, k = 35, w = 16
 Running 10 iterations.
-thash                avg.        0.24 us (0.00 sec); median            863 cycles,      1x:            863 cycles
-Generating keypair.. avg.     4420.88 us (0.00 sec); median     15,211,098 cycles,      1x:     15,211,098 cycles
-  - WOTS pk gen..    avg.      263.92 us (0.00 sec); median        945,828 cycles,     16x:     15,133,248 cycles
-Signing..            avg.    86325.78 us (0.09 sec); median    310,818,654 cycles,      1x:    310,818,654 cycles
-  - FORS signing..   avg.    14670.07 us (0.01 sec); median     52,819,470 cycles,      1x:     52,819,470 cycles
-  - WOTS pk gen..    avg.      264.11 us (0.00 sec); median        946,494 cycles,    272x:    257,446,368 cycles
-Verifying..          avg.     2345.76 us (0.00 sec); median      8,442,324 cycles,      1x:      8,442,324 cycles
+thash                avg.        0.28 us (0.00 sec); median          1,002 cycles,      1x:          1,002 cycles
+Generating keypair.. avg.     4916.16 us (0.00 sec); median     17,695,728 cycles,      1x:     17,695,728 cycles
+  - WOTS pk gen..    avg.      307.27 us (0.00 sec); median      1,103,472 cycles,     16x:     17,655,552 cycles
+Signing..            avg.   100667.36 us (0.10 sec); median    362,443,014 cycles,      1x:    362,443,014 cycles
+  - FORS signing..   avg.    17089.74 us (0.02 sec); median     61,519,770 cycles,      1x:     61,519,770 cycles
+  - WOTS pk gen..    avg.      306.71 us (0.00 sec); median      1,103,292 cycles,    272x:    300,095,424 cycles
+Verifying..          avg.     2763.04 us (0.00 sec); median      9,947,394 cycles,      1x:      9,947,394 cycles
 Signature size: 49856 (48.69 KiB)
 Public key size: 64 (0.06 KiB)
 Secret key size: 128 (0.12 KiB)
@@ -146,13 +146,13 @@ Benchmarking sphincs-sha2-128s simple using ref
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/ref”
 Parameters: n = 16, h = 63, d = 7, b = 12, k = 14, w = 16
 Running 10 iterations.
-thash                avg.        0.54 us (0.00 sec); median          1,937 cycles,      1x:          1,937 cycles
-Generating keypair.. avg.    70688.16 us (0.07 sec); median    252,744,570 cycles,      1x:    252,744,570 cycles
-  - WOTS pk gen..    avg.      136.67 us (0.00 sec); median        491,904 cycles,    512x:    251,854,848 cycles
-Signing..            avg.   533203.09 us (0.53 sec); median  1,919,081,592 cycles,      1x:  1,919,081,592 cycles
-  - FORS signing..   avg.    41629.48 us (0.04 sec); median    149,867,838 cycles,      1x:    149,867,838 cycles
-  - WOTS pk gen..    avg.      136.68 us (0.00 sec); median        491,904 cycles,   3584x:  1,762,983,936 cycles
-Verifying..          avg.      498.11 us (0.00 sec); median      1,787,760 cycles,      1x:      1,787,760 cycles
+thash                avg.        0.28 us (0.00 sec); median          1,004 cycles,      1x:          1,004 cycles
+Generating keypair.. avg.    81841.15 us (0.08 sec); median    294,665,274 cycles,      1x:    294,665,274 cycles
+  - WOTS pk gen..    avg.      160.25 us (0.00 sec); median        573,876 cycles,    512x:    293,824,512 cycles
+Signing..            avg.   621406.52 us (0.62 sec); median  2,237,140,404 cycles,      1x:  2,237,140,404 cycles
+  - FORS signing..   avg.    48550.94 us (0.05 sec); median    174,784,158 cycles,      1x:    174,784,158 cycles
+  - WOTS pk gen..    avg.      159.98 us (0.00 sec); median        573,876 cycles,   3584x:  2,056,771,584 cycles
+Verifying..          avg.      634.42 us (0.00 sec); median      2,282,346 cycles,      1x:      2,282,346 cycles
 Signature size: 7856 (7.67 KiB)
 Public key size: 32 (0.03 KiB)
 Secret key size: 64 (0.06 KiB)
@@ -162,13 +162,13 @@ Benchmarking sphincs-sha2-192s simple using ref
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/ref”
 Parameters: n = 24, h = 63, d = 7, b = 14, k = 17, w = 16
 Running 10 iterations.
-thash                avg.        0.50 us (0.00 sec); median          1,758 cycles,      1x:          1,758 cycles
-Generating keypair.. avg.   102541.24 us (0.10 sec); median    367,605,792 cycles,      1x:    367,605,792 cycles
-  - WOTS pk gen..    avg.      201.16 us (0.00 sec); median        715,806 cycles,    512x:    366,492,672 cycles
-Signing..            avg.   943354.40 us (0.94 sec); median  3,395,030,130 cycles,      1x:  3,395,030,130 cycles
-  - FORS signing..   avg.   227575.52 us (0.23 sec); median    819,402,480 cycles,      1x:    819,402,480 cycles
-  - WOTS pk gen..    avg.      198.87 us (0.00 sec); median        715,644 cycles,   3584x:  2,564,868,096 cycles
-Verifying..          avg.      779.90 us (0.00 sec); median      2,804,238 cycles,      1x:      2,804,238 cycles
+thash                avg.        0.28 us (0.00 sec); median          1,003 cycles,      1x:          1,003 cycles
+Generating keypair.. avg.   119116.90 us (0.12 sec); median    428,811,300 cycles,      1x:    428,811,300 cycles
+  - WOTS pk gen..    avg.      232.09 us (0.00 sec); median        835,272 cycles,    512x:    427,659,264 cycles
+Signing..            avg.  1098344.00 us (1.10 sec); median  3,954,195,432 cycles,      1x:  3,954,195,432 cycles
+  - FORS signing..   avg.   265468.69 us (0.27 sec); median    955,461,366 cycles,      1x:    955,461,366 cycles
+  - WOTS pk gen..    avg.      232.11 us (0.00 sec); median        835,344 cycles,   3584x:  2,993,872,896 cycles
+Verifying..          avg.      908.00 us (0.00 sec); median      3,266,478 cycles,      1x:      3,266,478 cycles
 Signature size: 16224 (15.84 KiB)
 Public key size: 48 (0.05 KiB)
 Secret key size: 96 (0.09 KiB)
@@ -178,13 +178,13 @@ Benchmarking sphincs-sha2-256s simple using ref
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/ref”
 Parameters: n = 32, h = 64, d = 8, b = 14, k = 22, w = 16
 Running 10 iterations.
-thash                avg.        0.46 us (0.00 sec); median          1,640 cycles,      1x:          1,640 cycles
-Generating keypair.. avg.    68298.79 us (0.07 sec); median    242,849,358 cycles,      1x:    242,849,358 cycles
-  - WOTS pk gen..    avg.      262.77 us (0.00 sec); median        945,954 cycles,    256x:    242,164,224 cycles
-Signing..            avg.   835858.37 us (0.84 sec); median  3,009,520,818 cycles,      1x:  3,009,520,818 cycles
-  - FORS signing..   avg.   294934.85 us (0.29 sec); median  1,061,769,672 cycles,      1x:  1,061,769,672 cycles
-  - WOTS pk gen..    avg.      263.33 us (0.00 sec); median        945,900 cycles,   2048x:  1,937,203,200 cycles
-Verifying..          avg.     1180.20 us (0.00 sec); median      4,244,148 cycles,      1x:      4,244,148 cycles
+thash                avg.        0.28 us (0.00 sec); median          1,002 cycles,      1x:          1,002 cycles
+Generating keypair.. avg.    78645.17 us (0.08 sec); median    283,132,530 cycles,      1x:    283,132,530 cycles
+  - WOTS pk gen..    avg.      306.97 us (0.00 sec); median      1,104,048 cycles,    256x:    282,636,288 cycles
+Signing..            avg.   973249.09 us (0.97 sec); median  3,503,794,590 cycles,      1x:  3,503,794,590 cycles
+  - FORS signing..   avg.   343961.16 us (0.34 sec); median  1,238,241,168 cycles,      1x:  1,238,241,168 cycles
+  - WOTS pk gen..    avg.      306.84 us (0.00 sec); median      1,103,598 cycles,   2048x:  2,260,168,704 cycles
+Verifying..          avg.     1329.81 us (0.00 sec); median      4,785,678 cycles,      1x:      4,785,678 cycles
 Signature size: 29792 (29.09 KiB)
 Public key size: 64 (0.06 KiB)
 Secret key size: 128 (0.12 KiB)
@@ -194,12 +194,12 @@ Benchmarking sphincs-shake-128f simple using shake-avx2
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/shake-avx2”
 Parameters: n = 16, h = 66, d = 22, b = 6, k = 33, w = 16
 Running 10 iterations.
-Generating keypair.. avg.     1139.61 us (0.00 sec); median      4,082,364 cycles,      1x:      4,082,364 cycles
-  - WOTS pk gen 4x.. avg.      333.09 us (0.00 sec); median      1,067,220 cycles,      2x:      2,134,440 cycles
-Signing..            avg.    14012.18 us (0.01 sec); median     50,468,274 cycles,      1x:     50,468,274 cycles
-  - FORS signing..   avg.      866.00 us (0.00 sec); median      3,114,576 cycles,      1x:      3,114,576 cycles
-  - WOTS pk gen x4.. avg.      297.47 us (0.00 sec); median      1,070,802 cycles,     44x:     47,115,288 cycles
-Verifying..          avg.      970.76 us (0.00 sec); median      3,492,324 cycles,      1x:      3,492,324 cycles
+Generating keypair.. avg.      694.63 us (0.00 sec); median      2,494,854 cycles,      1x:      2,494,854 cycles
+  - WOTS pk gen 4x.. avg.      346.07 us (0.00 sec); median      1,245,096 cycles,      2x:      2,490,192 cycles
+Signing..            avg.    16254.02 us (0.02 sec); median     58,500,990 cycles,      1x:     58,500,990 cycles
+  - FORS signing..   avg.     1000.19 us (0.00 sec); median      3,598,236 cycles,      1x:      3,598,236 cycles
+  - WOTS pk gen x4.. avg.      346.07 us (0.00 sec); median      1,245,096 cycles,     44x:     54,784,224 cycles
+Verifying..          avg.     1128.78 us (0.00 sec); median      4,063,716 cycles,      1x:      4,063,716 cycles
 Signature size: 17088 (16.69 KiB)
 Public key size: 32 (0.03 KiB)
 Secret key size: 64 (0.06 KiB)
@@ -209,12 +209,12 @@ Benchmarking sphincs-shake-192f simple using shake-avx2
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/shake-avx2”
 Parameters: n = 24, h = 66, d = 22, b = 8, k = 33, w = 16
 Running 10 iterations.
-Generating keypair.. avg.     1267.86 us (0.00 sec); median      4,540,176 cycles,      1x:      4,540,176 cycles
-  - WOTS pk gen 4x.. avg.      516.84 us (0.00 sec); median      1,574,352 cycles,      2x:      3,148,704 cycles
-Signing..            avg.    22150.51 us (0.02 sec); median     79,678,746 cycles,      1x:     79,678,746 cycles
-  - FORS signing..   avg.     3384.56 us (0.00 sec); median     12,205,062 cycles,      1x:     12,205,062 cycles
-  - WOTS pk gen x4.. avg.      436.61 us (0.00 sec); median      1,571,346 cycles,     44x:     69,139,224 cycles
-Verifying..          avg.     1406.89 us (0.00 sec); median      5,060,880 cycles,      1x:      5,060,880 cycles
+Generating keypair.. avg.      984.51 us (0.00 sec); median      3,541,392 cycles,      1x:      3,541,392 cycles
+  - WOTS pk gen 4x.. avg.      504.27 us (0.00 sec); median      1,811,160 cycles,      2x:      3,622,320 cycles
+Signing..            avg.    25520.66 us (0.03 sec); median     91,863,954 cycles,      1x:     91,863,954 cycles
+  - FORS signing..   avg.     3904.81 us (0.00 sec); median     14,059,494 cycles,      1x:     14,059,494 cycles
+  - WOTS pk gen x4.. avg.      504.30 us (0.00 sec); median      1,811,160 cycles,     44x:     79,691,040 cycles
+Verifying..          avg.     1644.93 us (0.00 sec); median      5,919,426 cycles,      1x:      5,919,426 cycles
 Signature size: 35664 (34.83 KiB)
 Public key size: 48 (0.05 KiB)
 Secret key size: 96 (0.09 KiB)
@@ -224,12 +224,12 @@ Benchmarking sphincs-shake-256f simple using shake-avx2
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/shake-avx2”
 Parameters: n = 32, h = 68, d = 17, b = 9, k = 35, w = 16
 Running 10 iterations.
-Generating keypair.. avg.     3118.59 us (0.00 sec); median     10,768,230 cycles,      1x:     10,768,230 cycles
-  - WOTS pk gen 4x.. avg.      944.36 us (0.00 sec); median      2,707,164 cycles,      4x:     10,828,656 cycles
-Signing..            avg.    59852.24 us (0.06 sec); median    215,450,442 cycles,      1x:    215,450,442 cycles
-  - FORS signing..   avg.     9286.76 us (0.01 sec); median     33,436,422 cycles,      1x:     33,436,422 cycles
-  - WOTS pk gen x4.. avg.      746.34 us (0.00 sec); median      2,682,072 cycles,     68x:    182,380,896 cycles
-Verifying..          avg.     1816.51 us (0.00 sec); median      6,541,002 cycles,      1x:      6,541,002 cycles
+Generating keypair.. avg.     2691.03 us (0.00 sec); median      9,676,188 cycles,      1x:      9,676,188 cycles
+  - WOTS pk gen 4x.. avg.      670.90 us (0.00 sec); median      2,412,756 cycles,      4x:      9,651,024 cycles
+Signing..            avg.    53694.86 us (0.05 sec); median    193,273,884 cycles,      1x:    193,273,884 cycles
+  - FORS signing..   avg.     8235.24 us (0.01 sec); median     29,642,220 cycles,      1x:     29,642,220 cycles
+  - WOTS pk gen x4.. avg.      670.85 us (0.00 sec); median      2,412,630 cycles,     68x:    164,058,840 cycles
+Verifying..          avg.     1673.20 us (0.00 sec); median      6,019,830 cycles,      1x:      6,019,830 cycles
 Signature size: 49856 (48.69 KiB)
 Public key size: 64 (0.06 KiB)
 Secret key size: 128 (0.12 KiB)
@@ -239,12 +239,12 @@ Benchmarking sphincs-shake-128s simple using shake-avx2
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/shake-avx2”
 Parameters: n = 16, h = 63, d = 7, b = 12, k = 14, w = 16
 Running 10 iterations.
-Generating keypair.. avg.    38751.72 us (0.04 sec); median    137,343,726 cycles,      1x:    137,343,726 cycles
-  - WOTS pk gen 4x.. avg.      296.02 us (0.00 sec); median      1,065,492 cycles,    128x:    136,382,976 cycles
-Signing..            avg.   289032.91 us (0.29 sec); median  1,038,152,970 cycles,      1x:  1,038,152,970 cycles
-  - FORS signing..   avg.    23238.97 us (0.02 sec); median     82,195,362 cycles,      1x:     82,195,362 cycles
-  - WOTS pk gen x4.. avg.      297.49 us (0.00 sec); median      1,066,572 cycles,    896x:    955,648,512 cycles
-Verifying..          avg.      351.24 us (0.00 sec); median      1,262,718 cycles,      1x:      1,262,718 cycles
+Generating keypair.. avg.    44340.63 us (0.04 sec); median    159,844,320 cycles,      1x:    159,844,320 cycles
+  - WOTS pk gen 4x.. avg.      344.34 us (0.00 sec); median      1,236,258 cycles,    128x:    158,241,024 cycles
+Signing..            avg.   336400.28 us (0.34 sec); median  1,210,947,264 cycles,      1x:  1,210,947,264 cycles
+  - FORS signing..   avg.    26424.02 us (0.03 sec); median     95,553,324 cycles,      1x:     95,553,324 cycles
+  - WOTS pk gen x4.. avg.      346.56 us (0.00 sec); median      1,243,080 cycles,    896x:  1,113,799,680 cycles
+Verifying..          avg.      416.95 us (0.00 sec); median      1,491,894 cycles,      1x:      1,491,894 cycles
 Signature size: 7856 (7.67 KiB)
 Public key size: 32 (0.03 KiB)
 Secret key size: 64 (0.06 KiB)
@@ -254,12 +254,12 @@ Benchmarking sphincs-shake-192s simple using shake-avx2
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/shake-avx2”
 Parameters: n = 24, h = 63, d = 7, b = 14, k = 17, w = 16
 Running 10 iterations.
-Generating keypair.. avg.    56592.15 us (0.06 sec); median    203,017,932 cycles,      1x:    203,017,932 cycles
-  - WOTS pk gen 4x.. avg.      439.96 us (0.00 sec); median      1,583,946 cycles,    128x:    202,745,088 cycles
-Signing..            avg.   504422.47 us (0.50 sec); median  1,815,435,792 cycles,      1x:  1,815,435,792 cycles
-  - FORS signing..   avg.   110104.32 us (0.11 sec); median    395,510,166 cycles,      1x:    395,510,166 cycles
-  - WOTS pk gen x4.. avg.      441.90 us (0.00 sec); median      1,588,410 cycles,    896x:  1,423,215,360 cycles
-Verifying..          avg.      529.99 us (0.00 sec); median      1,905,210 cycles,      1x:      1,905,210 cycles
+Generating keypair.. avg.    64808.36 us (0.06 sec); median    233,254,134 cycles,      1x:    233,254,134 cycles
+  - WOTS pk gen 4x.. avg.      506.32 us (0.00 sec); median      1,824,120 cycles,    128x:    233,487,360 cycles
+Signing..            avg.   581378.43 us (0.58 sec); median  2,093,058,036 cycles,      1x:  2,093,058,036 cycles
+  - FORS signing..   avg.   126632.92 us (0.13 sec); median    455,799,654 cycles,      1x:    455,799,654 cycles
+  - WOTS pk gen x4.. avg.      507.65 us (0.00 sec); median      1,825,992 cycles,    896x:  1,636,088,832 cycles
+Verifying..          avg.      602.47 us (0.00 sec); median      2,165,706 cycles,      1x:      2,165,706 cycles
 Signature size: 16224 (15.84 KiB)
 Public key size: 48 (0.05 KiB)
 Secret key size: 96 (0.09 KiB)
@@ -269,12 +269,12 @@ Benchmarking sphincs-shake-256s simple using shake-avx2
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/shake-avx2”
 Parameters: n = 32, h = 64, d = 8, b = 14, k = 22, w = 16
 Running 10 iterations.
-Generating keypair.. avg.    37086.52 us (0.04 sec); median    132,892,200 cycles,      1x:    132,892,200 cycles
-  - WOTS pk gen 4x.. avg.      579.11 us (0.00 sec); median      2,081,862 cycles,     64x:    133,239,168 cycles
-Signing..            avg.   433556.80 us (0.43 sec); median  1,558,902,726 cycles,      1x:  1,558,902,726 cycles
-  - FORS signing..   avg.   141888.03 us (0.14 sec); median    510,400,224 cycles,      1x:    510,400,224 cycles
-  - WOTS pk gen x4.. avg.      578.47 us (0.00 sec); median      2,077,272 cycles,    512x:  1,063,563,264 cycles
-Verifying..          avg.      771.13 us (0.00 sec); median      2,772,756 cycles,      1x:      2,772,756 cycles
+Generating keypair.. avg.    42544.92 us (0.04 sec); median    153,274,212 cycles,      1x:    153,274,212 cycles
+  - WOTS pk gen 4x.. avg.      666.08 us (0.00 sec); median      2,395,008 cycles,     64x:    153,280,512 cycles
+Signing..            avg.   501068.94 us (0.50 sec); median  1,799,699,922 cycles,      1x:  1,799,699,922 cycles
+  - FORS signing..   avg.   163556.68 us (0.16 sec); median    587,368,584 cycles,      1x:    587,368,584 cycles
+  - WOTS pk gen x4.. avg.      665.67 us (0.00 sec); median      2,395,044 cycles,    512x:  1,226,262,528 cycles
+Verifying..          avg.      858.41 us (0.00 sec); median      3,085,776 cycles,      1x:      3,085,776 cycles
 Signature size: 29792 (29.09 KiB)
 Public key size: 64 (0.06 KiB)
 Secret key size: 128 (0.12 KiB)
@@ -284,12 +284,12 @@ Benchmarking sphincs-sha2-128f simple using sha2-avx2
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/sha2-avx2”
 Parameters: n = 16, h = 66, d = 22, b = 6, k = 33, w = 16
 Running 10 iterations.
-Generating keypair.. avg.      274.94 us (0.00 sec); median        987,354 cycles,      1x:        987,354 cycles
-  - WOTS pk gen 8x.. avg.      271.20 us (0.00 sec); median        970,524 cycles,      1x:        970,524 cycles
-Signing..            avg.     6476.36 us (0.01 sec); median     23,321,394 cycles,      1x:     23,321,394 cycles
-  - FORS signing..   avg.      421.49 us (0.00 sec); median      1,513,674 cycles,      1x:      1,513,674 cycles
-  - WOTS pk gen x8.. avg.      272.98 us (0.00 sec); median        981,270 cycles,     22x:     21,587,940 cycles
-Verifying..          avg.      543.34 us (0.00 sec); median      1,952,496 cycles,      1x:      1,952,496 cycles
+Generating keypair.. avg.      319.34 us (0.00 sec); median      1,143,558 cycles,      1x:      1,143,558 cycles
+  - WOTS pk gen 8x.. avg.      316.04 us (0.00 sec); median      1,132,650 cycles,      1x:      1,132,650 cycles
+Signing..            avg.     7467.93 us (0.01 sec); median     26,872,236 cycles,      1x:     26,872,236 cycles
+  - FORS signing..   avg.      488.47 us (0.00 sec); median      1,755,144 cycles,      1x:      1,755,144 cycles
+  - WOTS pk gen x8.. avg.      314.46 us (0.00 sec); median      1,131,948 cycles,     22x:     24,902,856 cycles
+Verifying..          avg.      613.01 us (0.00 sec); median      2,204,802 cycles,      1x:      2,204,802 cycles
 Signature size: 17088 (16.69 KiB)
 Public key size: 32 (0.03 KiB)
 Secret key size: 64 (0.06 KiB)
@@ -299,12 +299,12 @@ Benchmarking sphincs-sha2-192f simple using sha2-avx2
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/sha2-avx2”
 Parameters: n = 24, h = 66, d = 22, b = 8, k = 33, w = 16
 Running 10 iterations.
-Generating keypair.. avg.      595.69 us (0.00 sec); median      2,132,100 cycles,      1x:      2,132,100 cycles
-  - WOTS pk gen 8x.. avg.      586.62 us (0.00 sec); median      2,108,952 cycles,      1x:      2,108,952 cycles
-Signing..            avg.    10994.53 us (0.01 sec); median     39,407,850 cycles,      1x:     39,407,850 cycles
-  - FORS signing..   avg.     2154.01 us (0.00 sec); median      7,755,714 cycles,      1x:      7,755,714 cycles
-  - WOTS pk gen x8.. avg.      395.06 us (0.00 sec); median      1,421,658 cycles,     22x:     31,276,476 cycles
-Verifying..          avg.      731.54 us (0.00 sec); median      2,636,694 cycles,      1x:      2,636,694 cycles
+Generating keypair.. avg.      463.63 us (0.00 sec); median      1,662,498 cycles,      1x:      1,662,498 cycles
+  - WOTS pk gen 8x.. avg.      456.59 us (0.00 sec); median      1,640,610 cycles,      1x:      1,640,610 cycles
+Signing..            avg.    12615.68 us (0.01 sec); median     45,405,504 cycles,      1x:     45,405,504 cycles
+  - FORS signing..   avg.     2487.71 us (0.00 sec); median      8,954,622 cycles,      1x:      8,954,622 cycles
+  - WOTS pk gen x8.. avg.      456.54 us (0.00 sec); median      1,642,536 cycles,     22x:     36,135,792 cycles
+Verifying..          avg.      835.50 us (0.00 sec); median      3,003,534 cycles,      1x:      3,003,534 cycles
 Signature size: 35664 (34.83 KiB)
 Public key size: 48 (0.05 KiB)
 Secret key size: 96 (0.09 KiB)
@@ -314,12 +314,12 @@ Benchmarking sphincs-sha2-256f simple using sha2-avx2
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/sha2-avx2”
 Parameters: n = 32, h = 68, d = 17, b = 9, k = 35, w = 16
 Running 10 iterations.
-Generating keypair.. avg.     1039.82 us (0.00 sec); median      3,733,020 cycles,      1x:      3,733,020 cycles
-  - WOTS pk gen 8x.. avg.      515.76 us (0.00 sec); median      1,850,094 cycles,      2x:      3,700,188 cycles
-Signing..            avg.    22525.29 us (0.02 sec); median     80,210,808 cycles,      1x:     80,210,808 cycles
-  - FORS signing..   avg.     4475.91 us (0.00 sec); median     16,118,460 cycles,      1x:     16,118,460 cycles
-  - WOTS pk gen x8.. avg.      521.15 us (0.00 sec); median      1,871,982 cycles,     34x:     63,647,388 cycles
-Verifying..          avg.      745.88 us (0.00 sec); median      2,683,872 cycles,      1x:      2,683,872 cycles
+Generating keypair.. avg.     1204.78 us (0.00 sec); median      4,327,632 cycles,      1x:      4,327,632 cycles
+  - WOTS pk gen 8x.. avg.      601.41 us (0.00 sec); median      2,152,800 cycles,      2x:      4,305,600 cycles
+Signing..            avg.    25572.03 us (0.03 sec); median     92,059,542 cycles,      1x:     92,059,542 cycles
+  - FORS signing..   avg.     5157.75 us (0.01 sec); median     18,567,738 cycles,      1x:     18,567,738 cycles
+  - WOTS pk gen x8.. avg.      597.95 us (0.00 sec); median      2,153,034 cycles,     34x:     73,203,156 cycles
+Verifying..          avg.      825.93 us (0.00 sec); median      2,967,642 cycles,      1x:      2,967,642 cycles
 Signature size: 49856 (48.69 KiB)
 Public key size: 64 (0.06 KiB)
 Secret key size: 128 (0.12 KiB)
@@ -329,12 +329,12 @@ Benchmarking sphincs-sha2-128s simple using sha2-avx2
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/sha2-avx2”
 Parameters: n = 16, h = 63, d = 7, b = 12, k = 14, w = 16
 Running 10 iterations.
-Generating keypair.. avg.    18035.11 us (0.02 sec); median     62,302,896 cycles,      1x:     62,302,896 cycles
-  - WOTS pk gen 8x.. avg.      270.68 us (0.00 sec); median        971,028 cycles,     64x:     62,145,792 cycles
-Signing..            avg.   131276.01 us (0.13 sec); median    472,744,044 cycles,      1x:    472,744,044 cycles
-  - FORS signing..   avg.    10253.98 us (0.01 sec); median     36,915,354 cycles,      1x:     36,915,354 cycles
-  - WOTS pk gen x8.. avg.      270.69 us (0.00 sec); median        971,982 cycles,    448x:    435,447,936 cycles
-Verifying..          avg.      206.12 us (0.00 sec); median        739,044 cycles,      1x:        739,044 cycles
+Generating keypair.. avg.    20186.05 us (0.02 sec); median     72,597,852 cycles,      1x:     72,597,852 cycles
+  - WOTS pk gen 8x.. avg.      315.21 us (0.00 sec); median      1,133,784 cycles,     64x:     72,562,176 cycles
+Signing..            avg.   153135.86 us (0.15 sec); median    551,233,638 cycles,      1x:    551,233,638 cycles
+  - FORS signing..   avg.    11962.82 us (0.01 sec); median     43,068,042 cycles,      1x:     43,068,042 cycles
+  - WOTS pk gen x8.. avg.      314.56 us (0.00 sec); median      1,131,516 cycles,    448x:    506,919,168 cycles
+Verifying..          avg.      235.46 us (0.00 sec); median        846,486 cycles,      1x:        846,486 cycles
 Signature size: 7856 (7.67 KiB)
 Public key size: 32 (0.03 KiB)
 Secret key size: 64 (0.06 KiB)
@@ -344,12 +344,12 @@ Benchmarking sphincs-sha2-192s simple using sha2-avx2
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/sha2-avx2”
 Parameters: n = 24, h = 63, d = 7, b = 14, k = 17, w = 16
 Running 10 iterations.
-Generating keypair.. avg.    25990.68 us (0.03 sec); median     91,333,476 cycles,      1x:     91,333,476 cycles
-  - WOTS pk gen 8x.. avg.      397.99 us (0.00 sec); median      1,429,866 cycles,     64x:     91,511,424 cycles
-Signing..            avg.   246207.03 us (0.25 sec); median    886,455,612 cycles,      1x:    886,455,612 cycles
-  - FORS signing..   avg.    68453.33 us (0.07 sec); median    246,475,458 cycles,      1x:    246,475,458 cycles
-  - WOTS pk gen x8.. avg.      396.91 us (0.00 sec); median      1,423,134 cycles,    448x:    637,564,032 cycles
-Verifying..          avg.      280.05 us (0.00 sec); median      1,005,246 cycles,      1x:      1,005,246 cycles
+Generating keypair.. avg.    29249.51 us (0.03 sec); median    105,310,692 cycles,      1x:    105,310,692 cycles
+  - WOTS pk gen 8x.. avg.      456.26 us (0.00 sec); median      1,641,546 cycles,     64x:    105,058,944 cycles
+Signing..            avg.   283943.71 us (0.28 sec); median  1,022,229,270 cycles,      1x:  1,022,229,270 cycles
+  - FORS signing..   avg.    79135.26 us (0.08 sec); median    284,903,190 cycles,      1x:    284,903,190 cycles
+  - WOTS pk gen x8.. avg.      456.03 us (0.00 sec); median      1,640,772 cycles,    448x:    735,065,856 cycles
+Verifying..          avg.      334.16 us (0.00 sec); median      1,201,230 cycles,      1x:      1,201,230 cycles
 Signature size: 16224 (15.84 KiB)
 Public key size: 48 (0.05 KiB)
 Secret key size: 96 (0.09 KiB)
@@ -359,12 +359,12 @@ Benchmarking sphincs-sha2-256s simple using sha2-avx2
 make: 进入目录“/home/kzoacn/下载/sphincsplus-master (4) (1)/sphincsplus-master/sha2-avx2”
 Parameters: n = 32, h = 64, d = 8, b = 14, k = 22, w = 16
 Running 10 iterations.
-Generating keypair.. avg.    16884.09 us (0.02 sec); median     59,843,412 cycles,      1x:     59,843,412 cycles
-  - WOTS pk gen 8x.. avg.      519.79 us (0.00 sec); median      1,873,944 cycles,     32x:     59,966,208 cycles
-Signing..            avg.   221460.72 us (0.22 sec); median    796,637,520 cycles,      1x:    796,637,520 cycles
-  - FORS signing..   avg.    88474.77 us (0.09 sec); median    318,542,652 cycles,      1x:    318,542,652 cycles
-  - WOTS pk gen x8.. avg.      520.29 us (0.00 sec); median      1,867,626 cycles,    256x:    478,112,256 cycles
-Verifying..          avg.      408.08 us (0.00 sec); median      1,467,540 cycles,      1x:      1,467,540 cycles
+Generating keypair.. avg.    19177.50 us (0.02 sec); median     69,033,492 cycles,      1x:     69,033,492 cycles
+  - WOTS pk gen 8x.. avg.      598.02 us (0.00 sec); median      2,151,630 cycles,     32x:     68,852,160 cycles
+Signing..            avg.   255134.35 us (0.26 sec); median    918,473,904 cycles,      1x:    918,473,904 cycles
+  - FORS signing..   avg.   101915.69 us (0.10 sec); median    366,932,772 cycles,      1x:    366,932,772 cycles
+  - WOTS pk gen x8.. avg.      598.44 us (0.00 sec); median      2,153,268 cycles,    256x:    551,236,608 cycles
+Verifying..          avg.      473.25 us (0.00 sec); median      1,701,324 cycles,      1x:      1,701,324 cycles
 Signature size: 29792 (29.09 KiB)
 Public key size: 64 (0.06 KiB)
 Secret key size: 128 (0.12 KiB)

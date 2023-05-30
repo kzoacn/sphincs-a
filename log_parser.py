@@ -1,4 +1,4 @@
-filename='log_spxc'
+filename='log'
 with open(filename) as f:
     lines=f.readlines() 
 

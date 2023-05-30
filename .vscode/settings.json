@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "utils.h": "c",
-        "params.h": "c",
-        "uintx.h": "c",
-        "fors.h": "c"
-    }
-}
